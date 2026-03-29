@@ -23,13 +23,13 @@ const Navbar = () => {
         {/* Desktop Links */}
         <ul className="hidden md:flex gap-8 font-medium">
           <li>
-            <Link to="/" className="hover:text-green-600">Home</Link>
+            <Link to="/" className="hover:text-green-600 transition">Home</Link>
           </li>
           <li>
-            <Link to="/about" className="hover:text-green-600">About</Link>
+            <Link to="/about" className="hover:text-green-600 transition">About</Link>
           </li>
           <li>
-            <Link to="/contact" className="hover:text-green-600">Contact</Link>
+            <Link to="/contact" className="hover:text-green-600 transition">Contact</Link>
           </li>
         </ul>
 
@@ -46,13 +46,13 @@ const Navbar = () => {
       {isOpen && (
         <ul className="md:hidden bg-white px-4 pb-4 space-y-4 font-medium shadow-md">
           <li>
-            <Link to="/" className="block hover:text-green-600" onClick={() => setIsOpen(false)}>Home</Link>
+            <Link to="/" className="block hover:text-green-600 transition" onClick={() => setIsOpen(false)}>Home</Link>
           </li>
           <li>
-            <Link to="/about" className="block hover:text-green-600" onClick={() => setIsOpen(false)}>About</Link>
+            <Link to="/about" className="block hover:text-green-600 transition" onClick={() => setIsOpen(false)}>About</Link>
           </li>
           <li>
-            <Link to="/contact" className="block hover:text-green-600" onClick={() => setIsOpen(false)}>Contact</Link>
+            <Link to="/contact" className="block hover:text-green-600 transition" onClick={() => setIsOpen(false)}>Contact</Link>
           </li>
         </ul>
       )}
